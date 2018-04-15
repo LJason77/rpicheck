@@ -1,20 +1,26 @@
 <!--
 
-    Copyright (C) 2017  RasPi Check Contributors
+    MIT License
 
-    This program is free software; you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation; either version 2 of the License, or
-    (at your option) any later version.
+    Copyright (c) 2018  RasPi Check Contributors
 
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software, and to permit persons to whom the Software is
+    furnished to do so, subject to the following conditions:
 
-    You should have received a copy of the GNU General Public License along
-    with this program; if not, write to the Free Software Foundation, Inc.,
-    51 Franklin Street, Fifth Floor, Boston, MA 02110-1301 USA.
+    The above copyright notice and this permission notice shall be included in all
+    copies or substantial portions of the Software.
+
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+    IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+    FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+    AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+    LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+    OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+    SOFTWARE.
 
 -->
 <android.support.v4.widget.SwipeRefreshLayout
@@ -62,7 +68,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/core_temp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/coreTempText"
@@ -73,7 +79,7 @@
                     android:layout_toRightOf="@+id/coreTempLabel"
                     android:gravity="right"
                     android:paddingLeft="8dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -85,7 +91,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/arm_freq"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/armFreqText"
@@ -97,7 +103,7 @@
                     android:layout_toRightOf="@+id/armFreqLabel"
                     android:gravity="right"
                     android:paddingLeft="8dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -110,7 +116,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/core_freq"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/coreFreqText"
@@ -122,7 +128,7 @@
                     android:layout_toRightOf="@+id/coreFreqLabel"
                     android:gravity="right"
                     android:paddingLeft="8dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -134,7 +140,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/core_volt"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/coreVoltText"
@@ -146,7 +152,7 @@
                     android:layout_toRightOf="@+id/coreVoltLabel"
                     android:gravity="right"
                     android:paddingLeft="8dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -158,7 +164,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/firmware_version"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/firmwareText"
@@ -172,7 +178,7 @@
                     android:gravity="right"
                     android:paddingLeft="8dp"
                     android:singleLine="true"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <TextView
@@ -196,7 +202,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/uptime_started"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/uptimeText"
@@ -208,7 +214,33 @@
                     android:layout_toRightOf="@+id/startedLabel"
                     android:gravity="right"
                     android:paddingLeft="8dp"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/systemtimeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/systemtimeLabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/systemtime"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
+
+                <TextView
+                    android:id="@+id/systemtimeText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_toRightOf="@+id/systemtimeLabel"
+                    android:gravity="right"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -222,7 +254,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/average_load"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/averageLoadText"
@@ -233,7 +265,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/loadLabel"
                     android:gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -247,7 +279,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/total_memory"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/totalMemoryText"
@@ -258,7 +290,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/totalMemLabel"
                     android:gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -266,24 +298,24 @@
                 android:layout_height="wrap_content">
 
                 <TextView
-                    android:id="@+id/freeMemLabel"
+                    android:id="@+id/totalSwapLabel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
-                    android:text="@string/free_memory"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:text="@string/total_swap"
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
-                    android:id="@+id/freeMemoryText"
+                    android:id="@+id/totalSwapText"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@+id/freeMemLabel"
+                    android:layout_alignBottom="@+id/totalSwapLabel"
                     android:layout_alignParentRight="true"
                     android:layout_alignParentTop="true"
-                    android:layout_toRightOf="@+id/freeMemLabel"
+                    android:layout_toRightOf="@+id/totalSwapLabel"
                     android:gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -297,7 +329,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/distribution"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/distriText"
@@ -308,7 +340,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/distriLabel"
                     android:gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -322,7 +354,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/cpu_serial"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/cpuSerialText"
@@ -333,7 +365,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/cpuSerialLabel"
                     android:gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <RelativeLayout
@@ -347,7 +379,7 @@
                     android:layout_alignParentLeft="true"
                     android:layout_alignParentTop="true"
                     android:text="@string/last_update"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
 
                 <TextView
                     android:id="@+id/lastUpdateText"
@@ -357,7 +389,7 @@
                     android:layout_alignParentTop="true"
                     android:layout_toRightOf="@+id/lastUpdateLabel"
                     android:gravity="right"
-                    android:textAppearance="?android:attr/textAppearanceMedium"/>
+                    android:textAppearance="?android:attr/textAppearanceSmall"/>
             </RelativeLayout>
 
             <TextView
